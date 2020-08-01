@@ -1,0 +1,41 @@
+/**
+ * Fonts
+*/
+
+@font-face {
+  font-family: 'DINP-R';
+  src: url("../fonts/DINPro-Regular.eot?") format("eot"),
+  url("../fonts/DINPro-Regular.woff") format("woff"),
+  url("../fonts/DINPro-Regular.ttf") format("truetype"),
+  url("../fonts/DINPro-Regular.svg#DINPro-Regular") format("svg");
+  font-style: normal;
+}
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * termina:
+ *   - http://typekit.com/eulas/00000000000000003b9adf1a
+ *   - http://typekit.com/eulas/00000000000000003b9adf28
+ *
+ * © 2009-2020 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2020-07-29 06:45:41 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=yce7gmq&ht=tk&f=28977.28991&a=8093693&app=typekit&e=css");
+
+@font-face {
+  font-family:"termina";
+  src:url("https://use.typekit.net/af/da851f/00000000000000003b9adf1a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/da851f/00000000000000003b9adf1a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/da851f/00000000000000003b9adf1a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-display:auto;font-style:normal;font-weight:400;
+}
+
+@font-face {
+  font-family:"termina";
+  src:url("https://use.typekit.net/af/298959/00000000000000003b9adf28/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/298959/00000000000000003b9adf28/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/298959/00000000000000003b9adf28/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  font-display:auto;font-style:normal;font-weight:700;
+}
+
+.tk-termina { font-family: "termina",sans-serif; }
