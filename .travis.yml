@@ -1,9 +1,9 @@
 language: node_js
 node_js:
-  - node
+  - 12.16.2
   - lts/*
 install:
-  - npm ci
+  - npm
 script:
   - npm run lint-sass
   - npm run lint-js
