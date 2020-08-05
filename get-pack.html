@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <title>Stickerz</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500,600,700&display=swap" rel="stylesheet">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" href="favicon.ico"><link href="css/app.css" rel="stylesheet"></head>
 <body>
 <header class="main-header">
-    <div class="header-logo">stickerz</div>
+    <div class="header-logo"><a href="/">stickerz</a></div>
     <div class="header-actions">
-        <a href="" class="link link-primary">DOWNLOAD</a>
-        <a href="" class="link link-secondary">CONTACT US</a>
+        <a href="/#download" class="link link-primary download-link">DOWNLOAD</a>
+        <a href="/#contact" class="link link-secondary contact-link">CONTACT US</a>
     </div>
 </header>
 <main>
@@ -43,8 +44,10 @@
                             GET STICKER PACK
                         </button>
                         <div class="stickers-gen-link">
-                            <input type="text" class="gen-link-input" value="http://stickerZ.com/s/XRHCHC">
-                            <span class="copy-to-clipboard">
+                            <div class="tooltip" id="tooltipCopy">Copied to clipboard</div>
+                            <input id="linkInput" readonly type="text" class="gen-link-input"
+                                   value="http://stickerZ.com/s/XRHCHC">
+                            <span class="copy-to-clipboard" id="copyLink">
                                 <img src="images/copy.svg">
                             </span>
                         </div>
@@ -56,12 +59,26 @@
     <footer class="main-footer">
         <div class="footer-content">
             <ul>
-                <li><a href="" class="link link-logo">stickerz</a></li>
-                <li><a href="" class="link-primary link">PRIVACY POLICY</a></li>
-                <li><a href="" class="link-primary link">CONTACT US</a></li>
+                <li><a href="/#download" class="link link-logo">stickerz</a></li>
+                <li><a href="/privacy-policy.html" class="link-primary link">PRIVACY POLICY</a></li>
+                <li><a href="/#contact" class="link-primary link">CONTACT US</a></li>
             </ul>
         </div>
     </footer>
 </main>
+<script>
+    let copyLinkElem = document.getElementById('copyLink');
+    let linkInputText = document.getElementById('linkInput');
+    let toolTip = document.getElementById('tooltipCopy');
+    copyLinkElem.addEventListener('click', function copyToClipBoard() {
+        linkInputText.select();
+        linkInputText.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+        toolTip.style.opacity = '1';
+        window.setTimeout(function () {
+            toolTip.style.opacity = '0';
+        }, 1000);
+    });
+</script>
 <script src="js/app.js"></script></body>
 </html>
